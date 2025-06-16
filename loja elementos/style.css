@@ -2,82 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    text-align: center;
+  }
+  
+  body {
     background-color: #005c05;
-}
-
-.slide-container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.image-container {
-    width: 300vw;
-    height: 100vh;
-    display: flex;
-    animation: slideAnimation 9s infinite ease-in-out;
-}
-
-.slider-image {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-.button-container {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 10px;
-}
-
-.slider-button {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: #fff;
+    background-color: #003300;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.slider-button:hover {
-    background-color: #888;
-}
-
-@keyframes slideAnimation {
-    0% { transform: translateX(0); }
-    33.33% { transform: translateX(-100vw); }
-    66.66% { transform: translateX(-200vw); }
-    100% { transform: translateX(0); }
-}
-
-/* Controle via âncoras */
-#slider-image1:target ~ .image-container {
-    animation: none;
-    transform: translateX(0);
-}
-
-#slider-image2:target ~ .image-container {
-    animation: none;
-    transform: translateX(-100vw);
-}
-
-#slider-image3:target ~ .image-container {
-    animation: none;
-    transform: translateX(-200vw);
-}
-table {
-    margin: 40px auto;       
-    width: 80%;             
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+  .carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  table {
+    margin: 40px auto;
+    width: 80%;
     border-collapse: collapse;
     background-color: #ffffff;
     color: #000;
@@ -104,4 +105,3 @@ table {
     background-color: #00aa00;
     color: white;
   }
-  

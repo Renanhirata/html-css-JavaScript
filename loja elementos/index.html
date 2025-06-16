@@ -1,91 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Dolly</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="light-theme">
-    <h1>Dolly</h1>
-    <p id="msg"></p>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Dolly</title>
+</head>
+<body class="light-theme">
 
-    <ul>
-      <li><img src="dollynho_palco-.png" alt="logo" width="200"></li>
-    </ul>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>
-      <a href="https://www.dolly.com.br/" target="_blank">Veja tudo sobre a marca DOLLY!</a>
-    </p>
+  <h1>Dolly</h1>
 
-    <script src="ap.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  <ul>
+    <li><img src="dollynho_palco-.png" alt="logo" width="200"></li>
+  </ul>
 
-    <div class="slide-container">
-      <span id="slider-image1"></span>
-      <span id="slider-image2"></span>
-      <span id="slider-image3"></span>
-      <span id="reset-target"></span>
+  <p>
+    <a href="https://www.dolly.com.br/" target="_blank">Veja tudo sobre a marca DOLLY!</a>
+  </p>
 
-      <div class="image-container">
-        <img src="dolly1.png" class="slider-image">
-        <img src="dolly3.png" class="slider-image">
-        <img src="dolly2.png" class="slider-image">
+  <section class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="dolly1.png" alt="Dolly 1" />
       </div>
-
-      <div class="button-container">
-        <a href="#slider-image1" class="slider-button"></a>
-        <a href="#slider-image2" class="slider-button"></a>
-        <a href="#slider-image3" class="slider-button"></a>
-        <a href="#reset-target" class="slider-button"></a>
+      <div class="carousel-item">
+        <img src="dolly2.png" alt="Dolly 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="dolly3.png" alt="Dolly 3" />
       </div>
     </div>
 
-    <table border="1">
-      <caption><strong>SABORES DOLLY'S</strong></caption>
-      <thead>
-        <tr>
-          <th>Sabor</th>
-          <th>Benefícios</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Guaraná</td>
-          <td>Energia natural, sabor tradicional</td>
-        </tr>
-        <tr>
-          <td>Limão</td>
-          <td>Refrescante e leve, ótimo para dias quentes</td>
-        </tr>
-        <tr>
-          <td>Uva</td>
-          <td>Sabor adocicado e suave, agrada crianças</td>
-        </tr>
-        <tr>
-          <td>Maçã</td>
-          <td>Sabor leve e frutado, pouco ácido</td>
-        </tr>
-        <tr>
-          <td>Citrus</td>
-          <td>Combinação cítrica, bom para hidratação</td>
-        </tr>
-        <tr>
-          <td>Laranja</td>
-          <td>Fonte de vitamina C, sabor forte</td>
-        </tr>
-        <tr>
-          <td>Maracujá</td>
-          <td>Levemente calmante, sabor tropical</td>
-        </tr>
-        <tr>
-          <td>Cola</td>
-          <td>Clássico, com leve efeito estimulante</td>
-        </tr>
-      </tbody>
-    </table>
+    <button class="carousel-button prev">&#10094;</button>
+    <button class="carousel-button next">&#10095;</button>
+    <div class="carousel-dots"></div>
+  </section>
 
-  </body>
+  <table>
+    <caption><strong>SABORES DOLLY'S</strong></caption>
+    <thead>
+      <tr>
+        <th>Sabor</th>
+        <th>Benefícios</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Guaraná</td><td>Energia natural, sabor tradicional</td></tr>
+      <tr><td>Limão</td><td>Refrescante e leve, ótimo para dias quentes</td></tr>
+      <tr><td>Uva</td><td>Sabor adocicado e suave, agrada crianças</td></tr>
+      <tr><td>Maçã</td><td>Sabor leve e frutado, pouco ácido</td></tr>
+      <tr><td>Citrus</td><td>Combinação cítrica, bom para hidratação</td></tr>
+      <tr><td>Laranja</td><td>Fonte de vitamina C, sabor forte</td></tr>
+      <tr><td>Maracujá</td><td>Levemente calmante, sabor tropical</td></tr>
+      <tr><td>Cola</td><td>Clássico, com leve efeito estimulante</td></tr>
+    </tbody>
+  </table>
+
+  <script src="app.js"></script>
+  <script src="ap.js"></script>
+  <noscript>Você precisa ativar o JavaScript para ver o site completo.</noscript>
+
+</body>
 </html>
+
 
 
 
