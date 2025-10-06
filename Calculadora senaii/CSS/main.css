@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient( to left, rgb(4, 0, 255), rgb(150, 131, 255)) ;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.calcForm {
+    background-color: #ffffff54;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 8px #303436;
+    display: inline-block;
+}
+
+button {
+    background: linear-gradient( to left, rgb(17, 0, 255), rgb(0, 2, 129)) ;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type="number"],
+    num1 {
+        width: 300px;
+        height: 70px;
+        border-radius: 8px;
+    }
+button {
+    width: 200px;
+    height: 80px;
+    border-radius: 8px;
+}
+button:hover{
+    background: linear-gradient( to right, rgb(47, 0, 255), rgb(143, 131, 255)) ;
+}
+select{
+    width: 200px;
+    height: 75px;
+    border-radius: 8px;
+}
+select:hover{
+    background: linear-gradient( to right, rgb(55, 0, 255), rgb(150, 131, 255)) ;
+}
+input[type="number"]:hover, 
+num1:hover{
+    background: linear-gradient( to right, rgb(47, 0, 255), rgb(255, 131, 245)) ;
+}
