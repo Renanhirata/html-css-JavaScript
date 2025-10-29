@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    background-color: #4600b6;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+    .questao{
+    color: #ffffff;
+}
+    .ponto{
+        color: #ffffff;
+        text-align: right;
+    }
+  body {
+    background-color: #eee7e7;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);  
+  }
+
+  .Bloco{
+     text-align: center;
+     border-radius: 8px;
+    background-color: #ffffff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
+    padding: 20px;
+    width: 500px;
+    padding: 20px;
+    margin-top: 200px;
+  }
+button.vermelho{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
+    background-color: #ff0000;
+    color: #ffffff;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+}
+button.azul{
+    border-radius: 8px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0, 0.075);
+    background-color: #1916c9;
+    color: #ffffff;
+        width: 200px;
+    height: 100px;
+    margin: 5px;
+}
+button.amarelo{
+    border-radius: 8px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0, 0.075);
+    background-color: #acbd14;
+    color: #ffffff;
+        width: 200px;
+    height: 100px;
+    margin: 5px;
+}
+button.verde{
+    border-radius: 8px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0, 0.075);
+    background-color: #04910f;
+    color: #ffffff;
+        width: 200px;
+    height: 100px;
+    margin: 5px;
+}
